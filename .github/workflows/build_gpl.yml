@@ -271,6 +271,7 @@ jobs:
         cp -avf tools/dep_gpl/${{ env.TARGET_OS }}_arm64/lib/* sdk-*/lib/arm64
         ./tools/ci-after-build.sh
     - name: Archieve SDK
+      if: always()  # 添加这一行
       uses: actions/upload-artifact@v4
       with:
         name: ffmpeg-${{ env.FF_VERSION }}-${{ env.TARGET_OS }}-${{ matrix.config }}

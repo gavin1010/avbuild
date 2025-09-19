@@ -64,3 +64,4 @@ When linking static libs to your program, all dependencies must be specified in 
 ## TODO
 - Azure pipeline/github action: vs2022+WSL
 - <!-- Trigger build: $(date) ->
+- <!-- Trigger build20250919: $(date) ->
